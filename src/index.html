@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link href="index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="webfont_css/all.min.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <!-- top nav -->
+    <div class="bg-cyan-700 w-full fixed top-0 z-10 shadow-md">
+      <nav class="container mx-auto h-20">
+        <div class="flex justify-between text-white items-center pt-3">
+          <!-- logo -->
+          <div class="flex justify-center items-center">
+            <!-- logo -->
+            <div>
+              <img src="assets/logo.png" alt="logo" class="w-14 mr-2" />
+            </div>
+            <!-- logo -->
+            <div>
+              <span class="text-white text-xl font-bold">Vuthy</span><br />
+              <span class="text-white text-xl font-bold">Panha</span>
+            </div>
+          </div>
+          <!-- logo -->
+          <div>
+            <ul class="flex">
+              <li
+                class="transition duration-400 font-semibold mr-8 uppercase list-nav hover:px-3 hover:py-1 px-3 py-1"
+              >
+                <a href="#">Home</a>
+              </li>
+              <li
+                class="transition duration-400 font-semibold mr-8 uppercase list-nav hover:px-3 hover:py-1 px-3 py-1"
+              >
+                <a href="#">About</a>
+              </li>
+              <li
+                class="transition duration-400 font-semibold mr-8 uppercase list-nav hover:px-3 hover:py-1 px-3 py-1"
+              >
+                <a href="#">Portfolio</a>
+              </li>
+              <li
+                class="transition duration-400 font-semibold mr-8 uppercase list-nav hover:px-3 hover:py-1 px-3 py-1 text-center"
+              >
+                <a href="#">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- top nav -->
+    <!-- below top nav -->
+    <div class="flex mt-20">
+      <div class="w-2/5 fixed z-0 top-color">
+        <img
+          src="assets/panha.jpg"
+          alt="my pic"
+          class="w-[600px] h-[600px] object-cover"
+        />
+      </div>
+      <!-- briefly about me -->
+      <div class="w-3/5 bg-cyan-800 absolute right-0 p-2 text-white h-auto">
+        <div class="ml-10">
+          <h1 class="text-5xl mt-10">
+            Hi, I'm <span class="auto-typing text-cyan-200"></span>
+          </h1>
+          <div>
+            <p class="mt-5 mr-44 text-justify">
+              Hello, I'm a Web developer from Cambodia, Phnom Penh. I have rich
+              experiece in Web design. I love using Tailwindcss frameword and
+              parcel building tool.
+            </p>
+          </div>
+          <div class="mt-10 pb-4">
+            <a
+              href="#"
+              class="border-[1px] px-8 font-semibold uppercase py-5 align-middle rounded-full border-cyan-700 hover:border-cyan-200 hover:text-cyan-200 transition duration-300 contact"
+              >Contact ME
+              <i
+                class="fa-solid fa-angles-right ml-2 icon transition duration-300"
+              ></i
+            ></a>
+          </div>
+        </div>
+        <hr class="mt-5 text-gray-900" />
+        <!-- about me part -->
+        <div>
+          <div class="mx-10 font-extrabold mt-16 text-4xl">
+            <h1>About me</h1>
+          </div>
+        </div>
+        <!-- about me part -->
+      </div>
+
+      <!-- briefly about me -->
+    </div>
+    <!-- below top nav -->
+    <script>
+      var option = new Typed(".auto-typing", {
+        strings: ["Panha.", "a CS student.", "a freelancer."],
+        typeSpeed: 50,
+        backSpeed: 50,
+        startDelay: 100,
+        backDelay: 2000,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>

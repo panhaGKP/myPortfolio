@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    font-family: 'Poppins', sans-serif;
+}
+/* img{
+    filter: opacity(0.4) drop-shadow(0 0 0 #19e8ff); 
+} */
+:root{
+    --cyanColor: #a5f3fc;
+    --cyanBackground: #155e75;
+}
+a:hover .icon{
+        --tw-translate-x: 0.25rem/* 4px */;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.list-nav{
+    box-shadow: inset 0 0 0 0 var(--cyanColor);
+    color: white;
+    /* margin: 0 -.25rem; */
+    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+    border-radius: 5px;
+  }
+.list-nav:hover {
+    box-shadow: inset 150px 0 0 0 var(--cyanColor);
+    color: var(--cyanBackground);
+  }
