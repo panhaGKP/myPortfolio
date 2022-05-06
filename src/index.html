@@ -7,8 +7,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    
     <!-- <script src="index.js"></script> -->
     <link href="index.css" rel="stylesheet" />
     <link rel="stylesheet" href="webfont_css/all.min.css" />
@@ -127,7 +125,7 @@
           </div>
           <hr>
           <div class="mx-10 mt-16 relative">
-            <h1 class="font-extrabold text-6xl box-border">Education</h1>
+            <h1 class="font-extrabold text-6xl"><span class=" text-white">Education</span></h1>
             <!-- scroll nav -->
             <div class="navs absolute right-40 top-0 ">
               <span><i class="prev fas fa-chevron-left hover:scale-110 transition duration-300 hover:border-cyan-200"></i></span>
@@ -137,23 +135,28 @@
             <div class=" mt-10 h-auto">
               <!-- slider -->
               <div class="swiper mySwiper">
-                <div class="swiper-wrapper ">
+                <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div>
-                      <h1 class=" text-white text-2xl font-bold ml-5 mt-3">Cambodia Academy of Digital Technology</h1>
+                      <h1 class="text-white text-2xl font-bold ml-5 mt-3">Cambodia Academy of Digital Technology</h1>
                     </div>
-                      <div class=" text-cyan-200 text-xs font-bold absolute rotate-90 top-8 left-[-30px]">2000 - 2012</div>
-                    <div class=" text-white mt-4 text-justify">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum repellendus asperiores quas aspernatur cumque quisquam, totam, quis illo doloremque dicta nisi numquam nihil cum enim at voluptates voluptatem non molestiae.
+                      <div class=" text-cyan-200 text-xs font-bold absolute rotate-90 top-8 left-[-30px]">2020 - Now</div>
+                    <div class=" text-white mt-4">
+                      <p>A Techo Scholarship student of bachelor degree in Computer Science (Year's 2). Curently looking for intership in Data scientist field.</p>
+                      <ul class="list-disc list-inside">
+                        <li class="">GPA 3.0</li>
+                        <li>Statistic note Academy: 90%</li>
+                      </ul>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div>
-                      <h1 class=" text-white text-2xl font-bold ml-5 mt-3">Cambodia Academy of Digital Technology</h1>
+                      <h1 class=" text-white text-2xl font-bold ml-5 mt-3">Preah Monivong High School</h1>
                     </div>
-                      <div class=" text-cyan-200 text-xs font-bold absolute rotate-90 top-8 left-[-30px]">2000 - 2012</div>
-                    <div class=" text-white mt-4 text-justify">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum repellendus asperiores quas aspernatur cumque quisquam, totam, quis illo doloremque dicta nisi numquam nihil cum enim at voluptates voluptatem non molestiae.
+                      <div class=" text-cyan-200 text-xs font-bold absolute rotate-90 top-8 left-[-30px]">2014 - 2020</div>
+                    <div class=" text-white mt-4">
+                      <p>Graduated successfully as a top 8 student of High School. A student who found Maths and Physic as a favorite subject. and also love to discuss among student to solve on certain critical problem.</p>
+                    
                     </div>
                   </div>
                   <div class="swiper-slide">
@@ -187,7 +190,6 @@
             <!-- dot progress -->
             <!-- <div class="swiper-pagination pt-9"></div> -->
             <div class="mt-5">
-            
             </div>
 
           </div>
@@ -197,6 +199,7 @@
 
       <!-- briefly about me -->
     </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
       var option = new Typed(".auto-typing", {
         strings: ["Panha.", "a CS student.", "a freelancer."],
@@ -215,19 +218,20 @@
           prevEl: ".prev",
         },
       });
-    </script>
+    </script>-->
     <!-- below top nav -->
+    
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-        },
+        // autoplay: {
+        //   delay: 5000,
+        //   disableOnInteraction: false,
+        // },
         slidesPerView: 2,
         spaceBetween: 40,
         speed: 1000,
-        //cssMode: true,
+        cssMode: true,
         navigation: {
           nextEl: ".next",
           prevEl: ".prev",

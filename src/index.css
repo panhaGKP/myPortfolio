@@ -72,12 +72,12 @@ a:hover .icon{
     /* text-align: center; */
     font-size: 18px;
     background: transparent;
-    color: black;
+    /* border: 1px solid red; */
+    /* background-color: wheat; */
 
     /* Center slide text vertically */
     /* display: flex; */
     /* -webkit-box-pack: center;
     -ms-flex-pack: center; */
   }
-
 
