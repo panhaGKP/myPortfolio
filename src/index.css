@@ -64,15 +64,16 @@ a:hover .icon{
   background: var(--cyan700);
 }
 .swiper {
-    width: 100%;
+    width: 90%;
     height: 100%;
+    /* border: 1px solid red; */
   }
 
 .swiper-slide {
     /* text-align: center; */
     font-size: 18px;
     background: transparent;
-    /* border: 1px solid red; */
+    /* border: 1px solid blue; */
     /* background-color: wheat; */
 
     /* Center slide text vertically */
