@@ -8,14 +8,19 @@
       rel="stylesheet"
     />
     <!-- <script src="index.js"></script> -->
-    <link href="index.css" rel="stylesheet" />
-    <link rel="stylesheet" href="additionalStyle.css">
+    <link href="Styling/index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Styling/additionalStyle.css">
     <link rel="stylesheet" href="webfont_css/all.min.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <link rel="shortcut icon" href="assets/light.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="Styling/percircle.less"> -->
+
+<!-- link and script for circle progress -->
+    <link rel="stylesheet" href="Styling/circle.css">
+
     <title>My Portfolio</title>
     
   </head>
@@ -218,19 +223,19 @@
           <div class="mt-10">
             <div>
               <span class=" text-xl">English</span>
-              <div class="border-[1px] h-2 w-[70%] rounded-md overflow-hidden mt-3">
+              <div class="bg-cyan-700 h-2 w-[70%] rounded-md overflow-hidden mt-3">
                 <div class="bg-cyan-200 w-[70%] h-[100%]"></div>
               </div>
             </div>
             <div class="mt-5">
               <span class=" text-xl">French</span>
-              <div class="border-[1px] h-2 w-[70%] rounded-md overflow-hidden mt-3">
+              <div class="bg-cyan-700 h-2 w-[70%] rounded-md overflow-hidden mt-3">
                 <div class="bg-cyan-200 w-[60%] h-[100%]"></div>
               </div>
             </div>
             <div class="mt-5">
               <span class=" text-xl">Chiness</span>
-              <div class="border-[1px]  h-2 w-[70%] rounded-md overflow-hidden mt-3">
+              <div class="bg-cyan-700 h-2 w-[70%] rounded-md overflow-hidden mt-3">
                 <div class="bg-cyan-200 w-[40%] h-[100%]"></div>
               </div>
             </div>
@@ -248,20 +253,22 @@
           <h1 class=" text-6xl font-bold mb-3">Coding skill</h1>
           <span class=" font-semibold text-cyan-200">Developing on</span>
           <!-- coding list -->
-          <div>
-            <ul class="border-2 flex mt-10">
-              <li class=" border-2 inline-block m-3">
-                <div class="circle-wrap">
-                  <div class="circle">
-                    <div class="mask full">
-                      <div class="fill"></div>
+          <div class=" h-auto">
+            <ul class="mt-10">
+              <li class="mb-5 inline-block align-top w-1/4 ">
+                <div class="container">
+                  <div class="progress java">
+                    <span class="progress-left">
+                      <span class="progress-bar"></span>
+                    </span>
+                    <span class="progress-right">
+                      <span class="progress-bar"></span>
+                    </span>
+                    <div>
+                      <div class="progress-value">80%</div>
                     </div>
-                    <div class="mask half">
-                      <div class="fill"></div>
-                    </div>
-                    <div class="inside-circle"> 75% </div>
                   </div>
-                </div>
+                </div>   
                 <div>
                   <h3 class=" text-xl font-semibold my-5">Java</h3>
                 </div>
@@ -269,39 +276,106 @@
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, iste.
                 </div>
               </li>
-              <li class="border-2 inline-block m-3">
-                <div class="circle-wrap">
-                  <div class="circle">
-                    <div class="mask full">
-                      <div class="fill"></div>
+              <li class="mb-5 inline-block align-top w-1/4 ml-10">
+                <div class="container">
+                  <div class="progress html">
+                    <span class="progress-left">
+                      <span class="progress-bar"></span>
+                    </span>
+                    <span class="progress-right">
+                      <span class="progress-bar"></span>
+                    </span>
+                    <div>
+                      <div class="progress-value">75%</div>
                     </div>
-                    <div class="mask half">
-                      <div class="fill"></div>
-                    </div>
-                    <div class="inside-circle"> 75% </div>
                   </div>
                 </div>
                 <div>
-                  <h3 class=" text-xl font-semibold my-5">Java</h3>
+                  <h3 class=" text-xl font-semibold my-5">HTML</h3>
                 </div>
                 <div class="text-sm">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, iste.
                 </div>
               </li>
-              <li class="border-2 inline-block m-3">
-                <div class="circle-wrap">
-                  <div class="circle">
-                    <div class="mask full">
-                      <div class="fill"></div>
+              <li class="mb-5 inline-block align-top w-1/4 ml-10">
+                <div class="container">
+                  <div class="progress mysql">
+                    <span class="progress-left">
+                      <span class="progress-bar"></span>
+                    </span>
+                    <span class="progress-right">
+                      <span class="progress-bar"></span>
+                    </span>
+                    <div>
+                      <div class="progress-value">70%</div>
                     </div>
-                    <div class="mask half">
-                      <div class="fill"></div>
-                    </div>
-                    <div class="inside-circle"> 75% </div>
                   </div>
                 </div>
                 <div>
-                  <h3 class=" text-xl font-semibold my-5">Java</h3><h3>Java</h3>
+                  <h3 class=" text-xl font-semibold my-5">MySql</h3>
+                </div>
+                <div class="text-sm">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, iste.
+                </div>
+              </li>
+              <li class="mb-5 inline-block align-top w-1/4">
+                <div class="container">
+                  <div class="progress css">
+                    <span class="progress-left">
+                      <span class="progress-bar"></span>
+                    </span>
+                    <span class="progress-right">
+                      <span class="progress-bar"></span>
+                    </span>
+                    <div>
+                      <div class="progress-value">75%</div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h3 class=" text-xl font-semibold my-5">CSS</h3>
+                </div>
+                <div class="text-sm">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, iste.
+                </div>
+              </li>
+              <li class="mb-5 inline-block align-top w-1/4 ml-10">
+                <div class="container">
+                  <div class="progress js">
+                    <span class="progress-left">
+                      <span class="progress-bar"></span>
+                    </span>
+                    <span class="progress-right">
+                      <span class="progress-bar"></span>
+                    </span>
+                    <div>
+                      <div class="progress-value">60%</div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h3 class=" text-xl font-semibold my-5">JavaScript</h3>
+                </div>
+                <div class="text-sm">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, iste.
+                </div>
+              </li>
+              <li class="mb-5 inline-block align-top w-1/4 ml-10">
+                <div class="container">
+                  <div class="progress php">
+                    <span class="progress-left">
+                      <span class="progress-bar"></span>
+                    </span>
+                    <span class="progress-right">
+                      <span class="progress-bar"></span>
+                    </span>
+                    <div>
+                      <div class="progress-value">65%</div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h3 class=" text-xl font-semibold my-5">PHP</h3>
                 </div>
                 <div class="text-sm">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, iste.
@@ -362,5 +436,6 @@
         rewind: true,
       });
     </script>
+    <!-- percent circle script -->
   </body>
 </html>
