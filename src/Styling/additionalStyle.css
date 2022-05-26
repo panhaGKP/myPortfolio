@@ -97,15 +97,11 @@ a:hover .icon{
                 0 0 90px rgb(229 231 235);
 }
 @media (min-width:412px){
-    .navigation{
-        left: 100%;
-        transition: 0.5s;
-    }
+
     .navigation.active{
-        left: 10%;
+        left: 0%;
         transition: 0.5s;
     }
-    
 }
 
 
