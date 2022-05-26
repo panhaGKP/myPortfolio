@@ -26,9 +26,9 @@
   </head>
   <body>
     <!-- top nav -->
-    <div class="bg-cyan-700  fixed top-0 z-10 shadow-md w-full border-2 min-w-[412px]" >
+    <div class="bg-cyan-700  fixed top-0 z-10 shadow-md w-full min-w-[412px]" >
       <nav class="container mx-auto h-20">
-        <div class="flex justify-between text-white items-center pt-3">
+        <div class="sm:flex sm:justify-between text-white items-center pt-3">
           <!-- logo -->
           <div class="flex justify-center items-center sm:ml-5">
             <!-- logo -->
@@ -42,20 +42,20 @@
             </div>
           </div>
           <!-- logo -->
-          <div>
-            <ul class="md:flex sm:hidden">
+          <div class="navigation sm:absolute md:relative md:top-0 sm:top-20 md:left-0 sm:bg-cyan-700 sm:bg-opacity-25  sm:text-center md:w-auto sm:w-full">
+            <ul class="md:flex">
               <li
-                class="transition duration-400 font-semibold mr-8 uppercase list-nav hover:px-3 hover:py-1 px-3 py-1"
+                class="transition duration-400 font-semibold mr-8 uppercase list-nav hover:px-3 hover:py-1 px-3 py-1 text-center"
               >
                 <a href="#">Home</a>
               </li>
               <li
-                class="transition duration-400 font-semibold mr-8 uppercase list-nav hover:px-3 hover:py-1 px-3 py-1"
+                class="transition duration-400 font-semibold mr-8 uppercase list-nav hover:px-3 hover:py-1 px-3 py-1 text-center"
               >
                 <a href="#">About</a>
               </li>
               <li
-                class="transition duration-400 font-semibold mr-8 uppercase list-nav hover:px-3 hover:py-1 px-3 py-1"
+                class="transition duration-400 font-semibold mr-8 uppercase list-nav hover:px-3 hover:py-1 px-3 py-1 text-center"
               >
                 <a href="#">Education</a>
               </li>
@@ -71,7 +71,7 @@
               </li>
             </ul>
           </div>
-          <div class="w-auto sm:block md:hidden mr-5 text-[40px]"><i class="fa-solid fa-bars"></i></div>
+          <div class="w-auto sm:block md:hidden mr-5 text-[40px] cursor-pointer toggle" onclick=toggleMenu()><i class="fa-solid fa-bars"></i></div>
         </div>
       </nav>
     </div>
@@ -445,5 +445,12 @@
       });
     </script>
     <!-- percent circle script -->
+    <script>
+      function toggleMenu(){
+        let toggle  = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        navigation.classList.toggle('active');
+      }
+    </script>
   </body>
 </html>
